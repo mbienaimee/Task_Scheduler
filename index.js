@@ -49,13 +49,13 @@ const removeTask = (title) => {
     for (let i = 0; i < taskSchedular.length; i++) {
         if (taskSchedular[i].title === title) {
             taskSchedular.splice(i, 1); 
-            console.log("Task removed:", title);
-            return; 
+            break
         }
     }
-    console.log("Task not found:", title);
+    // console.log("Task not found:", title);
 };
 
 
-removeTask('read'); 
+ removeTask('read'); 
 console.log(taskSchedular)
+// console.log(removeTask('read'))
